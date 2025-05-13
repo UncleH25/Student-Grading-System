@@ -54,6 +54,35 @@ int main()
 	{
 		cout << "Invalid percentage score. Please enter a value between 0.0 and 100.00." << endl;
 	}
-    
+
+	//Switch statement to determine the letter grade
+	switch (gradeLetter)
+	{
+		case 'A+':
+			cout << studentName << " has a grade of A+." << endl;
+			break;
+		case 'A':
+			cout << studentName << " has a grade of A." << endl;
+			break;
+		case 'A-':
+			cout << studentName << " has a grade of A-." << endl;
+			break;
+		case 'B':
+			cout << studentName << " has a grade of B." << endl;
+			break;
+		case 'C':
+			cout << studentName << " has a grade of C." << endl;
+			break;
+		case 'D':
+			cout << studentName << " has a grade of D." << endl;
+			break;
+		case 'F':
+			cout << studentName << " has a grade of F." << endl;
+			break;
+		default:
+			cout << "Invalid grade letter." << endl;
+			break;
+	}
+
     return 0;
 }
