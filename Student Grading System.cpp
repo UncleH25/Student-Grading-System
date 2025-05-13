@@ -18,8 +18,8 @@ int main()
 	cout << "Enter the student's percentage score (0.0-100.00): ";
 	cin >> PERCENTAGE_SCORE;
 
-	//Crash the program if the percentage score is greater than 100.00
-	assert(PERCENTAGE_SCORE > 100.00);
+	// Crash the program if the percentage score is not between 0.00 and 100.00
+	assert(PERCENTAGE_SCORE >= 0.00 && PERCENTAGE_SCORE <= 100.00);
 
 	//Determine the letter grade
 	if (PERCENTAGE_SCORE == 100.00 || PERCENTAGE_SCORE >= 80.00)
