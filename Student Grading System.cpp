@@ -22,19 +22,11 @@ int main()
 	assert(PERCENTAGE_SCORE >= 0.00 && PERCENTAGE_SCORE <= 100.00);
 
 	//Determine the letter grade
-	if (PERCENTAGE_SCORE == 100.00 || PERCENTAGE_SCORE >= 80.00)
-	{
-		gradeLetter = 'A+';
-	}
-	else if (PERCENTAGE_SCORE == 79.00 || PERCENTAGE_SCORE >= 70.00)
+	if (PERCENTAGE_SCORE == 100.00 || PERCENTAGE_SCORE >= 70.00)
 	{
 		gradeLetter = 'A';
 	}
-	else if (PERCENTAGE_SCORE == 69.00 || PERCENTAGE_SCORE >= 60.00)
-	{
-		gradeLetter = 'A-';
-	}
-	else if (PERCENTAGE_SCORE == 59.00 || PERCENTAGE_SCORE >= 50.00)
+	else if (PERCENTAGE_SCORE == 69.00 || PERCENTAGE_SCORE >= 50.00)
 	{
 		gradeLetter = 'B';
 	}
@@ -58,14 +50,8 @@ int main()
 	//Switch statement to determine the letter grade
 	switch (gradeLetter)
 	{
-		case 'A+':
-			cout << studentName << " has a grade of A+." << endl;
-			break;
 		case 'A':
 			cout << studentName << " has a grade of A." << endl;
-			break;
-		case 'A-':
-			cout << studentName << " has a grade of A-." << endl;
 			break;
 		case 'B':
 			cout << studentName << " has a grade of B." << endl;
